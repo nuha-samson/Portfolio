@@ -33,7 +33,7 @@ export default function Process() {
       <div className="process-intro"><h2>LESS<br /><em>THEORY.</em><br />MORE MAKING.</h2><p>My process is deliberately simple: understand, make, test, repeat.</p></div>
       <div className="process-list">
         {process.map(([num, title, copy]) => (
-          <div className="process-step" key={num}><span>{num}</span><h3>{title}</h3><p>{copy}</p>{/*<b>↘</b>*/}</div>
+          <div className="process-step" key={num}><span>{num}</span><h3>{title}</h3><p>{copy}</p><b>↘</b></div>
         ))}
       </div>
     </section>
