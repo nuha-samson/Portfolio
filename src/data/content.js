@@ -35,6 +35,7 @@ export const skills = [
   'EXPRESS',
   'MONGODB',
   'PYTHON',
+  'TAILWIND'
 ];
 
 export const process = [
