@@ -61,8 +61,8 @@ export default function About() {
       <div className="about-bottom">
         <div className="about-copy">
           <p className="eyebrow">THE SHORT VERSION</p>
-          <p>I’m Nuha, a Software Engineering student at ASTU and a full-stack dev. I've always been into building things that actually solve real-world problems—basically, I just like figuring out how stuff works under the hood. Most of my projects start as a random idea and turn into a cycle of me experimenting, breaking things, and fixing them until I actually end up with something useful. I like useful products that also have a point of view.</p>
-        </div>
+          <p>I’m Nuha, a software engineering student at ASTU and a full-stack dev. I've always been into building things that actually solve real problems—basically, I just love figuring out how stuff works under the hood. I'm big on making products that are useful, but also have a bit of a personality to them. </p>
+          </div>
         <div className="about-index">03<br />/ ASTU<br />SOFTWARE ENGINEERING<br />EXPECTED 2030</div>
       </div>
       <div className="about-rule" />
