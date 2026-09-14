@@ -17,6 +17,8 @@ export default function Contact() {
     const ctx = gsap.context(() => {
       gsap.from('.contact-word', { yPercent: 120, rotateX: -80, stagger: 0.12, duration: 1.1, ease: 'power4.out', scrollTrigger: { trigger: section.current, start: 'top 70%' } });
       gsap.from('.contact-links', { y: 40, opacity: 0, duration: 0.8, scrollTrigger: { trigger: '.contact-links', start: 'top 85%' } });
+      gsap.fromTo('.accent-word', { x: 0, y: 40, opacity: 0, color: 'var(--accent)' }, { x: 50, y: 40, opacity: 1, color: 'var(--text)', duration: 0.8, scrollTrigger: { trigger: '.accent-word', start: 'top 85%' } });
+      
       gsap.to('.contact .signature-shape', { rotation: 220, scale: 1.3, xPercent: -35, scrollTrigger: { trigger: section.current, start: 'top bottom', end: 'bottom top', scrub: 1.2 } });
     }, section);
     return () => ctx.revert();
