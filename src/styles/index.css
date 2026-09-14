@@ -1136,43 +1136,116 @@ em {
    font-size: clamp(4rem, 17vw, 7rem);
  }
 
- .project-stage {
-   min-height: 100svh;
-   padding: 70px 5vw 45px;
-   display: block;
- }
+   .project-stage {
+    min-height: auto;
+    padding: 70px 5vw 70px;
 
- .project-index {
-   left: 5vw;
-   top: 60px;
-   font-size: 7rem;
- }
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 
- .project-visual {
-   width: 125%;
-   margin-left: -12%;
-   margin-top: 11vh;
- }
+    gap: 38px;
+  }
 
- .project-info {
-   position: absolute;
-   left: 5vw;
-   right: 5vw;
-   bottom: 60px;
- }
+  .project-index {
+    position: absolute;
+    left: 5vw;
+    top: 55px;
 
- .project-title {
-   font-size: clamp(4.5rem, 18vw, 7rem);
- }
+    font-size: 7rem;
 
- .project-description {
-   font-size: .92rem;
- }
+    z-index: 4;
+  }
 
- .project-tech span {
-   padding: 6px 8px;
- }
+  .project-info {
+    position: relative;
 
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    order: 1;
+
+    width: 100%;
+    max-width: none;
+
+    padding: 75px 0 0;
+
+    z-index: 3;
+  }
+
+  .project-title {
+    font-size: clamp(4.5rem, 18vw, 7rem);
+    margin-bottom: 18px;
+  }
+
+  .project-description {
+    max-width: 100%;
+    font-size: .92rem;
+  }
+
+  .project-tech {
+    margin-top: 22px;
+    gap: 7px;
+  }
+
+  .project-tech span {
+    padding: 6px 8px;
+  }
+
+  .project-actions {
+    margin-top: 24px;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .project-visual {
+    position: relative;
+
+    order: 2;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 10px 0 14px;
+
+    aspect-ratio: auto;
+
+    display: block;
+
+    z-index: 2;
+  }
+
+  .project-visual::before {
+    content: '';
+
+    position: absolute;
+    inset: 0 8px 8px 8px;
+
+    border: 1px solid var(--border);
+
+    transform: translate(10px, 10px);
+
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .project-visual img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    border: 1px solid rgba(6, 7, 14, 0.45);
+
+    box-shadow:
+      10px 10px 0 rgba(6, 7, 14, 0.12),
+      0 0 0 1px rgba(211, 78, 36, 0.08);
+
+    object-fit: contain;
+  }
   .process-intro {
     padding: 55px 0 75px;
   }
