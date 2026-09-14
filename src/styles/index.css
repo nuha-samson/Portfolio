@@ -657,8 +657,20 @@ em {
   transform-origin: center;
 }
 
-.project-screen img {
+.project-screen img,
+.project-visual img {
+  display: block;
   width: 30rem;
+  max-width: 100%;
+  height: auto;
+
+  border: 1px solid rgba(6, 7, 14, 0.45);
+
+  box-shadow:
+    10px 10px 0 rgba(6, 7, 14, 0.12),
+    0 0 0 1px rgba(211, 78, 36, 0.08);
+
+  object-fit: contain;
 }
 
 .project-visual-label {
